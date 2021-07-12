@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+</head>
+<body>
+    <div class= "#">
+            <h1>AddClass</h1>
+            <p class='paragraph1'>Click the button to add class 'red' to this paragraph</p>
+            <button class='p1'>AddClass</button>
+
+            <h1>SlideToggle</h1>
+            <p class='paragraph2'>Click the button to slidetoggle a hidden image</p>
+            <button class='img'>SlideToggle</button>
+
+            <h1>Append</h1>
+            <p class='paragraph3'>Click the button to append a new paragraph!</p>
+            <button class='p3'>Append</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.paragraph1').click(function(){
+                $('.p1').addClass("red");
+            })
+            $('.paragraph2').click(function(){
+                $('.img').slideToggle();
+            })
+            $('.paragraph3').click(function(){
+                $('.p3').append("<p>new paragraph</p>");
+            })
+        })
+    </script>
+</body>
+</html>

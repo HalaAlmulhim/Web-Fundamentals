@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="jQuery assignment">
+	<title>frozen Elsa</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).attr('temp', $(this).attr('src'));
+				$(this).attr('src', $(this).attr('alt-src'));
+				$(this).attr('alt-src', $(this).attr('temp'));
+			});
+		});		
+	</script>
+</head>
+<body>
+	<img src="elsa0.jfif" alt-src='frozen0.jpg' temp=""><br>
+	<img src="elsa1.jfif" alt-src='frozen1.jpg' temp=""><br>
+	<img src="elsa2.jfif" alt-src='frozen2.jpg' temp=""><br>
+	<img src="elsa3.jfif" alt-src='frozen3.jpg' temp=""><br>
+	<img src="elsa4.jfif" alt-src='frozen4.jpg' temp="">
+</body>
+</html>

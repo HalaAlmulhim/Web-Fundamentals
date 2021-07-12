@@ -1,0 +1,16 @@
+p{
+	background-color: rgb(240, 97, 180);
+	display: inline;
+}
+a{
+	background-color:rgb(241, 120, 120);
+	display: block;
+}
+ul{
+	background-color:rgb(152, 152, 224);
+	/*display: inline;*/
+}
+ul li{
+	background-color: rgb(0, 128, 85);
+	display: inline;
+}

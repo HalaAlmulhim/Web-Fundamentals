@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>disney princess</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            var HTMLstring ="";
+            HTMLstring += '<button>Restore</button>'
+            $(document).ready(function(){
+                $(".container").append(HTMLstring)
+
+                $("img").click(function(){
+                    $(this).hide("slow");
+                })
+
+                $("button").click(function(){
+                    $("img").show();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <img src="Auorora.jfif"  alt="Auorora-pic">
+        <img src="belle.jfif"    alt="belle-pic">
+        <img src="cinderella.jfif"  alt="cinderella-pic">
+        <img src="elsa.jfif"   alt="elsa-pic">
+        <img src="jasmine.jfif"  alt="jasmine-pic">
+        <img src="snow white.jfif"  alt="snow-pic">
+        <img src="sofia.jfif"  alt="sofia-pic">
+        </div>
+    </body>
+</html>
